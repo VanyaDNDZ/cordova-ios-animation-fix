@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="ua.privatbank.plugins.Privat48PushPlugin"
+        version="0.1.0">
+
+    <name>iOSAnimationFix</name>
+    <author>Salamaha Ivan</author>
+
+    <description>
+        Simple plugin which fix bug
+        http://stackoverflow.com/questions/25908729/ios8-ipad-uiwebview-crashes-while-displaying-popover-when-user-taps-drop-down-li
+    </description>
+
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=4.0.0"/>
+    </engines>
+
+     <!--ios -->
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="iOSAnimationFix">
+                <param name="ios-package" value="iOSAnimationFix"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/CDVInAppBrowserViewController+animationfix.m"/>
+
+        <header-file src="src/ios/CDVInAppBrowserViewController+animationfix.h"/>
+
+    </platform>
+
+</plugin>

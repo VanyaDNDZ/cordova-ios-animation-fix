@@ -1,1 +1,1 @@
-# cordova-ios-animation-fix
+Fix для исправления анимации в iOS 8 
