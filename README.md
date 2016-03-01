@@ -1,0 +1,1 @@
+# cordova-ios-animation-fix
