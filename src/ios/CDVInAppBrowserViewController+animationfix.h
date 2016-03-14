@@ -6,8 +6,8 @@
 //
 //
 
-#import "CDVInAppBrowser.h"
+#import "MainViewController.h"
 
-@interface CDVInAppBrowserViewController (animationfix)
+@interface MainViewController (animationfix)
 -(void) dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion;
 @end

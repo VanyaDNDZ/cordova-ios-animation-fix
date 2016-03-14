@@ -8,12 +8,12 @@
 
 #import "CDVInAppBrowserViewController+animationfix.h"
 
-@implementation CDVInAppBrowserViewController (animationfix)
+@implementation MainViewController (animationfix)
 -(void) dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion{
     if (completion) {
         completion();
     }
-    
+
     [super dismissViewControllerAnimated:NO completion: nil];
 }
 @end
